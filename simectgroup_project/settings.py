@@ -27,6 +27,9 @@ SECRET_KEY = 'django-insecure-bkxcu_i35mj-(bw2z7@%!qfmzdlwx-d$z2s2jgiqudwd)_8lw%
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SITE_ID = 1
+CMS_CONFIRM_VERSION4 = True
+
 
 
 # Application definition
@@ -38,6 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'cms',
+    'treebeard',
+    'menus',
+    'sekizai',
 ]
 
 MIDDLEWARE = [
@@ -63,9 +71,15 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'sekizai.context_processors.sekizai',  
+
             ],
         },
     },
+]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static_pages', 'static'),
 ]
 
 WSGI_APPLICATION = 'simectgroup_project.wsgi.application'
@@ -104,7 +118,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
+
+LANGUAGES = [
+    ('es', 'Español'),
+    ('en', 'English'),
+]
+
+
 
 TIME_ZONE = 'UTC'
 
@@ -116,7 +137,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

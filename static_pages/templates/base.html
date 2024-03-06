@@ -1,12 +1,23 @@
+{% load cms_tags menu_tags sekizai_tags static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - SimectGroup</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SimectGroup page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>{% block title %}Simect Group{% endblock title %}</title>
+    {% render_block "css" %}
+    {% include "blocks/css_block.html" %}
+
 </head>
-<body>  
-    <h1>Bienvenido a SimectGroup</h1>
-    <!-- Aquí puedes agregar el contenido de tu página de inicio -->
+<body>
+    {% include "sections/navbar.html" %}
+
+    <div class="main" role="main">
+        {% block content %} {% endblock %}
+    </div>
+
+    {% include "sections/footer.html" %}
 </body>
 </html>

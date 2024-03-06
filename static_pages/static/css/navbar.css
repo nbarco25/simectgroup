@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+    width: 100px; /* Ajusta el ancho según tu logo */
+    height: auto;
+}
+
+.navbar-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-options li {
+    margin-right: 20px;
+}
+
+.navbar-options li:last-child {
+    margin-right: 0;
+}
+
+.navbar-options li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-options li a:hover {
+    color: #e6007e; /* Cambia el color al pasar el ratón */
+}
+
