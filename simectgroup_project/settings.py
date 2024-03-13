@@ -30,11 +30,12 @@ ALLOWED_HOSTS = []
 SITE_ID = 1
 CMS_CONFIRM_VERSION4 = True
 
-
+THUMBNAIL_HIGH_RESOLUTION = True
 
 # Application definition
 
 INSTALLED_APPS = [
+    "djangocms_admin_style",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,6 +47,32 @@ INSTALLED_APPS = [
     'treebeard',
     'menus',
     'sekizai',
+    'filer',
+    'easy_thumbnails',
+    'djangocms_text_ckeditor',
+    'djangocms_frontend',
+    "djangocms_frontend.contrib.accordion",
+    "djangocms_frontend.contrib.alert",
+    "djangocms_frontend.contrib.badge",
+    "djangocms_frontend.contrib.card",
+    "djangocms_frontend.contrib.carousel",
+    "djangocms_frontend.contrib.collapse",
+    "djangocms_frontend.contrib.content",
+    "djangocms_frontend.contrib.grid",
+    "djangocms_frontend.contrib.image",
+    "djangocms_frontend.contrib.jumbotron",
+    "djangocms_frontend.contrib.link",
+    "djangocms_frontend.contrib.listgroup",
+    "djangocms_frontend.contrib.media",
+    "djangocms_frontend.contrib.tabs",
+    "djangocms_frontend.contrib.utilities",
+    "djangocms_file",
+    "djangocms_picture",
+    "djangocms_video",
+    "djangocms_googlemap",
+    "djangocms_snippet",
+    "djangocms_style",
+    
 ]
 
 MIDDLEWARE = [
@@ -56,9 +83,18 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    "cms.middleware.user.CurrentUserMiddleware",
+    "cms.middleware.page.CurrentPageMiddleware",
+    "cms.middleware.toolbar.ToolbarMiddleware",
+    "cms.middleware.language.LanguageCookieMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
+    'cms.middleware.utils.ApphookReloadMiddleware',
+
 ]
 
 ROOT_URLCONF = 'simectgroup_project.urls'
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 TEMPLATES = [
     {
@@ -71,12 +107,21 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "django.template.context_processors.i18n",
                 'sekizai.context_processors.sekizai',  
+                'cms.context_processors.cms_settings'
 
             ],
         },
     },
 ]
+
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters'
+)
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static_pages', 'static'),
@@ -132,6 +177,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 # Static files (CSS, JavaScript, Images)
