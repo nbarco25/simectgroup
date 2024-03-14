@@ -1,18 +1,36 @@
 {% load cms_tags menu_tags sekizai_tags static %}
 
 
-    <nav class="navbar">
-        <div class="navbar-logo">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="navbar-logo navbar-brand">
             <a href="#"><img src="{% static 'images/logos/Simect-Logo.png' %}" alt="Logo"></a>
         </div>
-        <ul class="navbar-options">
-            <li><a href="#">Planes</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Facturas</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Hablemos</a></li>
-        </ul>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-options">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Planes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Facturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hablemos</a>
+                </li>
+            </ul>
         <div class="navbar-social-icons">
-            <!-- Íconos de redes sociales aquí -->
+            <a href="#"><img src="{% static 'images/logos/IconoIG.svg' %}" alt="Logo2"></a>
+            <a href="#"><img src="{% static 'images/logos/IconoLinkedin.svg' %}" alt="Logo3"></a>
         </div>
+    </div>
     </nav>

@@ -2,24 +2,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:transparent;
-    padding: 20px;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-left: 300px;
+    position: relative;
+}
+
+.nav-link{
+    padding: 0rem 0.5rem 0.5rem 1rem;
 }
 
 .navbar-logo img {
-    width: 100px; /* Ajusta el ancho según tu logo */
+    max-width: 100px; /* Establece el ancho máximo */
     height: auto;
+    position: relative;
+    left: -10rem;
 }
-
 .navbar-options {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
+    margin-left: 10%;
 }
 
 .navbar-options li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .navbar-options li:last-child {
@@ -28,11 +36,53 @@
 
 .navbar-options li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: white;
+   
 }
 
 .navbar-options li a:hover {
-    color: #e6007e; /* Cambia el color al pasar el ratón */
+    color: #e6007e;
 }
 
+.navbar-social-icons {
+    right: 20px;
+    padding-left: 20%;
+}
+
+.navbar-social-icons a img {
+    width: auto; /* Tamaño inicial de los íconos */
+    height: 25px;
+}
+
+/* Media query para ajustar el tamaño de los íconos en dispositivos más pequeños */
+@media (max-width: 768px) {
+    .navbar-social-icons a img {
+        width: 30px; /* Tamaño reducido para dispositivos más pequeños */
+    }
+    .navbar-logo img {
+        max-width: auto; /* Establece el ancho máximo */
+        height: auto;
+        position: relative;
+        top: 3rem;
+        left: -16rem;
+    }
+    .navbar-options {
+        display: block; /* Cambia la visualización de las opciones del menú a bloque */
+        margin-left: 0; /* Elimina el margen izquierdo para que ocupen todo el ancho */
+
+    }
+
+    .navbar-options li {
+        margin-right: 0; /* Elimina el margen derecho de cada elemento del menú */
+        margin-bottom: 10px; /* Agrega un espacio entre cada opción del menú */
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar-logo img {
+        display: none;
+    }
+    .navbar-options {
+        display: block;
+    }
+}

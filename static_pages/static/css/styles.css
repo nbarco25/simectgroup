@@ -3,7 +3,29 @@ html, body {
     padding: 0;
     background-image: url('/static/images/assets/Recurso10.svg'), url('/static/images/assets/Recurso11.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top right, left; /* Ajusta la posición a la parte superior derecha */
-    background-size: auto 50%, 10%; /* Establece el ancho de la imagen al 50% del tamaño original y la altura se ajusta automáticamente */
+    background-position: top right, left;
+    background-size: auto 71%, 10%;
+}
+
+@media (max-width: 1000px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-image: url('/static/images/assets/Recurso10.svg'), url('/static/images/assets/Recurso11.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top right, left;
+        background-size: auto 60%, 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-image: url('/static/images/assets/Recurso10.svg'), url('/static/images/assets/Recurso11.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top right, left;
+        background-size: auto 30%, 5%;
+    }
 
 }
