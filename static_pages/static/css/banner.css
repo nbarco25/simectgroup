@@ -2,14 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .carousel-item {
-    background-color: white;
+    background-color: transparent;
     text-align: center;
 }
 
@@ -21,25 +19,64 @@
     height: 100vh;
 }
 
-.carousel-control-prev {
-    left: 0;
-    right: auto;
-}
-
-.carousel-control-next {
-    right: 0;
-    left: auto;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
+    width: auto; /* Restablece el ancho predeterminado */
+    height: auto; /* Restablece la altura predeterminada */
+    padding: 0; /* Elimina cualquier relleno */
+    background: none; /* Elimina cualquier fondo */
+    border: none; /* Elimina cualquier borde */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px; /* Ancho deseado del icono */
+    height: 50px; /* Altura deseada del icono */
+    background-color: transparent; /* Hace que el fondo del icono sea transparente */
+    background-size: 100%; /* Ajusta el tamaño del icono */
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+    font-size: 2rem; /* Tamaño del icono */
+}
+
+.left-button-container,
+.right-button-container {
+    position: absolute; /* Posición absoluta para que se superpongan al carrusel */
+    top: 50%; /* Alinea verticalmente al centro */
+    transform: translateY(-50%); /* Ajusta la posición verticalmente */
+}
+
+.left-button-container {
+    left: 0; /* Alinea a la izquierda */
+}
+
+.right-button-container {
+    right: 0; /* Alinea a la derecha */
+}
+
+
+
+/* Botón de control de diapositiva anterior */
+a[data-slide="prev"] .carousel-control-prev-icon {
     color: black; /* Cambia el color de los iconos */
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+a[data-slide="prev"]:hover .carousel-control-prev-icon {
     color: #ff0000; /* Cambia el color al pasar el ratón */
 }
+
+/* Botón de control de diapositiva siguiente */
+a[data-slide="next"] .carousel-control-next-icon {
+    color: black; /* Cambia el color de los iconos */
+}
+
+a[data-slide="next"]:hover .carousel-control-next-icon {
+    color: #ff0000; /* Cambia el color al pasar el ratón */
+}
+
+
 
 .img-fluid {
     margin-top: 10rem;
