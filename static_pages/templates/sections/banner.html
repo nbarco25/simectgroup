@@ -1,0 +1,46 @@
+<div class="carousel">
+    <div class="carousel-item">
+        <h1>Option 1 content</h1>
+    </div>
+    <div class="carousel-item">
+        <h1>Option 2 content</h1>
+    </div>
+    <div class="carousel-item">
+        <h1>Option 3 content</h1>
+    </div>
+</div>
+
+<div class="carousel-controls">
+    <button class="carousel-control" onclick="prevSlide()">Previous</button>
+    <button class="carousel-control" onclick="nextSlide()">Next</button>
+</div>
+
+<script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("carousel-item");
+
+    function showSlide() {
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+    }
+
+    function prevSlide() {
+        slideIndex--;
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+        showSlide();
+    }
+
+    function nextSlide() {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        showSlide();
+    }
+
+    showSlide();
+</script>
