@@ -20,3 +20,28 @@
     align-items: center;
     height: 100vh;
 }
+
+.carousel-control-prev {
+    left: 0;
+    right: auto;
+}
+
+.carousel-control-next {
+    right: 0;
+    left: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black; /* Cambia el color de los iconos */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #ff0000; /* Cambia el color al pasar el ratón */
+}
+
+.img-fluid {
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
