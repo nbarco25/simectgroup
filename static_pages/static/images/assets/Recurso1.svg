@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1226.43 816">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #59addc;
+        isolation: isolate;
+        opacity: .95;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path id="Trazado_7027" data-name="Trazado 7027" class="cls-3" d="M2.43,0S-66.38,242.73,528.1,362.04c594.48,119.31,698.33,453.96,698.33,453.96V0H2.43Z"/>
+    </clipPath>
+  </defs>
+  <g id="Capa_2-2" data-name="Capa 2">
+    <g>
+      <g class="cls-2">
+        <image width="1080" height="1350" transform="translate(180.11 -83.44)" xlink:href="../../../../../../Decargas/Prueba-2.png"/>
+      </g>
+      <g id="Capa_1-2" data-name="Capa 1-2">
+        <path id="Trazado_7027-2" data-name="Trazado 7027" class="cls-1" d="M2.43,0S-66.38,242.73,528.1,362.04c594.48,119.31,698.33,453.96,698.33,453.96V0H2.43Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

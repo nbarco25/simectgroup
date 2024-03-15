@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     "djangocms_snippet",
     "djangocms_style",
     'bootstrap4',
+    'static_pages',
     
 ]
 
@@ -100,7 +101,7 @@ X_FRAME_OPTIONS = "SAMEORIGIN"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'static_pages', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'static_pages/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

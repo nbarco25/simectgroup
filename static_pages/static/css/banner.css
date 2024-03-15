@@ -8,7 +8,7 @@
 
 .carousel-item {
     background-color: transparent;
-    text-align: center;
+    text-align: left;
 }
 
 .main {
@@ -23,17 +23,28 @@
 .carousel-control-next {
     width: auto; /* Restablece el ancho predeterminado */
     height: auto; /* Restablece la altura predeterminada */
-    padding: 0; /* Elimina cualquier relleno */
+    padding: 20px; /* Elimina cualquier relleno */
     background: none; /* Elimina cualquier fondo */
     border: none; /* Elimina cualquier borde */
+
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 50px; /* Ancho deseado del icono */
-    height: 50px; /* Altura deseada del icono */
+.carousel-control-prev-icon{
+    width: 30px; /* Ancho deseado del icono */
+    height: 30px; /* Altura deseada del icono */
     background-color: transparent; /* Hace que el fondo del icono sea transparente */
     background-size: 100%; /* Ajusta el tamaño del icono */
+    filter: invert(30%);
+}
+
+
+.carousel-control-next-icon {
+    width: 30px; /* Ancho deseado del icono */
+    height: 30px; /* Altura deseada del icono */
+    background-color: transparent; /* Hace que el fondo del icono sea transparente */
+    background-size: 100%; /* Ajusta el tamaño del icono */
+    filter: invert(20%);
+
 }
 
 .carousel-control-prev-icon:before,
@@ -56,29 +67,33 @@
     right: 0; /* Alinea a la derecha */
 }
 
-
-
-/* Botón de control de diapositiva anterior */
-a[data-slide="prev"] .carousel-control-prev-icon {
-    color: black; /* Cambia el color de los iconos */
-}
-
-a[data-slide="prev"]:hover .carousel-control-prev-icon {
-    color: #ff0000; /* Cambia el color al pasar el ratón */
-}
-
-/* Botón de control de diapositiva siguiente */
-a[data-slide="next"] .carousel-control-next-icon {
-    color: black; /* Cambia el color de los iconos */
-}
-
-a[data-slide="next"]:hover .carousel-control-next-icon {
-    color: #ff0000; /* Cambia el color al pasar el ratón */
-}
-
-
-
 .img-fluid {
-    margin-top: 10rem;
-    margin-left: 10rem;
+    margin-top: 6rem;
+    margin-left: 6rem;
+    max-width: 60%;
+}
+
+.mas-info-btn {
+    position: relative; /* Permitirá posicionar el ícono de manera absoluta */
+    /*hacer un poco mas largo el botón*/
+    padding: 12px 40px 10px 10px;  /* Aumenta el relleno del botón */
+    border-radius: 48px;
+}
+
+.icono-mas {
+    position: absolute; /* Permite posicionar el ícono dentro del botón */
+    top: 50%; /* Lo posiciona verticalmente en el centro */
+    right: 7px; /* Lo posiciona al inicio del botón */
+    transform: translateY(-50%); /* Ajusta verticalmente según el tamaño */
+    width: 30px; /* Tamaño del ícono */
+    height: 30px; /* Tamaño del ícono */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad 50% */
+    border-radius: 50%; /* Hace el ícono redondo */
+    display: flex; /* Permite centrar el contenido horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.mas-info-btn:hover .icono-mas {
+    background-color: rgba(255, 255, 255, 0.7); /* Cambia la opacidad al pasar el ratón */
 }

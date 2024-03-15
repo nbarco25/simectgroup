@@ -1,9 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image: url('/static/images/assets/Recurso10.svg'), url('/static/images/assets/Recurso11.svg');
+    background-image: url('/static/images/assets/Recurso1.svg'), url('/static/images/assets/Recurso11.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top right, left;
+    background-position: top right, bottom left;
     background-size: auto 71%, 10%;
 }
 
