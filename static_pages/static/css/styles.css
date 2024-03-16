@@ -4,7 +4,7 @@ html, body {
     background-image: url('/static/images/assets/Recurso1.svg'), url('/static/images/assets/Recurso11.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
-    background-size: auto 71%, 10%;
+    background-size: auto 50%, 10%;
 }
 
 @media (max-width: 1000px) {
