@@ -10,20 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0">
     <title>{% block title %}Simect Group{% endblock title %}</title>
     {% bootstrap_css %}
-
     {% render_block "css" %}
     {% include "blocks/css_block.html" %}
 
 </head>
 <body>
+    
     {% include "sections/navbar.html" %}
-
-    <div class="main" role="main">
-        {% block content %}{% include "sections/banner.html"%}{% endblock %}
-    </div>
+    <section class="main" role="main">
+        {% block banner_content %}
+            {% include "sections/banner.html" %}
+        {% endblock %}
+    </section>
 
     <section class="planes-section">
         {% include "sections/planes.html" %}
+    </section>
+
+    <section class="novedades-section">
+        {% include "sections/novedades.html" %}
     </section>
 
     {% bootstrap_javascript %}

@@ -2,11 +2,20 @@
 
 .btn-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     width: 117px;
     height: 10vh; /* Altura ajustable según tu preferencia */
     color: #C0E3F3;
+
+}
+
+.titulo-planes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 50px;
 
 }
 
@@ -16,10 +25,11 @@
 }
 
 .btn-group button {
+    
     width: 4px; /* Ancho ajustable según tu preferencia */
     height: 40px; /* Altura ajustable según tu preferencia */
     font-size: 14px; /* Tamaño de fuente ajustable según tu preferencia */
-    border-radius: 22.5px;
+    border-radius: 22.5px ;
     border-color: #E6E6E6;
     margin: 10px 0;
     color: black;

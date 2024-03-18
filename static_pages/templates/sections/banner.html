@@ -1,17 +1,20 @@
 {% load cms_tags menu_tags sekizai_tags static %}
 
+
+
 <div class="left-button-container">
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
 </div>
-
+{% block banner_content %}
 <div class="container">
     
     <div class="row">
         <!-- Primera columna -->
         <div class="col-md-6">
             <!-- Carrusel -->
+            
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 
                 <div class="carousel-inner">
@@ -59,6 +62,8 @@
     </div>
     
 </div>
+
+{% endblock %}
 <div class="right-button-container">
     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>

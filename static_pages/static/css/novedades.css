@@ -1,0 +1,28 @@
+.titulo-novedades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.titulo-news-card {
+    color: #2592D2
+}
+
+.card-img-top {
+   border: 5px solid #75BBE2; 
+   border-radius: 34px;
+}
+
+.news-card {
+    border-radius: 34px;
+    width: 18rem;
+    border: 0px;
+    padding-right: 20px;
+}
+
+.container-news-card {
+    padding-right: 20px;
+}
+
