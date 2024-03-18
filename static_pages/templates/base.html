@@ -22,7 +22,9 @@
         {% block content %}{% include "sections/banner.html"%}{% endblock %}
     </div>
 
-    {% include "sections/planes.html" %}
+    <section class="planes-section">
+        {% include "sections/planes.html" %}
+    </section>
 
     {% bootstrap_javascript %}
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
