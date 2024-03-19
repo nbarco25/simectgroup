@@ -1,3 +1,8 @@
+.novedades-container{
+    height: auto;
+    padding-bottom: 50px;
+}
+
 .titulo-novedades{
     display: flex;
     justify-content: center;
