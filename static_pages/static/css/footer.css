@@ -1,32 +1,6 @@
-.footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-}
 
-.footer h3 {
-    color: #333;
-    font-size: 18px;
-}
 
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.contenedor-footer{
+    background-color: black;
 
-.footer .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer .col-md-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-    padding: 0 15px;
-}
-
-@media (max-width: 768px) {
-    .footer .col-md-3 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
 }

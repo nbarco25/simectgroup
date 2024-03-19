@@ -199,3 +199,4 @@ EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'apikey'  # tu usuario API de SendGrid
+#EMAIL_HOST_PASSWORD =   # tu clave API de SendGrid

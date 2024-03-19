@@ -1,27 +1,107 @@
 {% load i18n cache cms_tags static %}
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <h3>Logo</h3>
-                <!-- Aquí podría ir el logo -->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5 ">
+
+    <footer class="bg-primary text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4 contenedor-footer">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+            <div class=" shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+              <img src="{% static 'images/logos/Simect-Logo.png' %}" height="70" alt=""loading="lazy" />
             </div>
-            <div class="col-sm-6 col-md-3">
-                <h3>Nosotros</h3>
-                <!-- Aquí podrían ir detalles sobre la empresa o equipo -->
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <h3>Puntos de Atención</h3>
-                <!-- Aquí podrían ir los puntos de atención o ubicaciones -->
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <h3>Enlaces de Interés</h3>
-                <!-- Aquí podrían ir enlaces a páginas importantes -->
-            </div>
-            <div class="col-sm-12 col-md-12">
-                <h3>Contacto</h3>
-                <!-- Aquí podrían ir detalles de contacto -->
-            </div>
+  
+            <p class="text-left">Soluciones de infraestructura para telecomunicaciones en fibra óptica, eléctricas, electrónicas y paneles solares.</p>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Nosotros</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Sobre nosotros</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Planes</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Servicios</a>
+              </li>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Enlaces de interés</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Normatividad</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Términos y condiciones</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Tratamiento de datos</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">PQRS</a>
+              </li>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contáctenos</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i> Calle 4 2-85, Popayán Cauca</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i> <a href="" class="contacto-wpp-footer">3163347098</a></p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i> <a href="" class="contact-email-footer">gerencia@simectgroup.com</a></p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
         </div>
-    </div>
-</footer>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+    
+    </footer>
+  
+  </div>
+  <!-- End of .container -->
