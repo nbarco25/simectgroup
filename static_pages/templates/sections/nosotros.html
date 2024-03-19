@@ -26,11 +26,23 @@
         </div>
       </section>
 
-    <section class="mision" style="text-align: center;">
+
+
+      <section id="mision" class="mision" style="text-align: center;">
         <div class="mision-container container">
-            <div class="row">
-                <div class="col-md-6" style="display: flex; flex-direction: column; justify-content: center;">
-                    <h2>Misión</h2>
+            <div class="row align-items-center justify-content-center">
+                <!-- Primera columna para los botones de switch entre misión y visión -->
+                <div class="col-md-2 mb-3">
+                    <a id="misionBtn" class="btn btn-primary btn-switch btn-mision-1 mr-2 active">Misión</a>
+                    <a id="visionBtn" class="btn btn-primary btn-vision-2 btn-switch">Visión</a>
+                </div>
+                <!-- Segunda columna para la imagen -->
+                <div class="col-md-5 mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <img class="img-secciones" src="{% static 'images/assets/mision1.png' %}" alt="Imagen de la misión">
+                </div>
+                <!-- Tercera columna para el texto -->
+                <div class="col-md-5 mb-3" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h2 class="mb-4">Misión</h2>
                     <p class="text-left">Nuestra misión es satisfacer las necesidades de nuestros 
                         clientes ofreciendo servicios integrales relacionados con 
                         asesoría, soporte técnico, administración, operación, 
@@ -46,39 +58,45 @@
                         competitividad de las organizaciones, tomando en 
                         cuenta sus necesidades y exigencias. Nos consideramos 
                         más que un proveedor, nos convertimos en aliados 
-                        estratégicos y socios de confianza.</p>
-                </div>
-                <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
-                    <img class="img-secciones" src="{% static 'images/assets/news3.jpg' %}" alt="Imagen de la misión"  >
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="vision" style="text-align: center;">
-        <div class="vision-container container">
-            <div class="row">
-                
-                <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
-                    <img class="img-secciones" src="{% static 'images/assets/news3.jpg' %}" alt="Imagen de la misión"  >
-                </div>
-
-                <div class="col-md-6" style="display: flex; flex-direction: column; justify-content: center;">
-                    <h2>Visión</h2>
-                    <p class="text-left">En Simect Group, aspiramos a ser líderes reconocidos en la industria de 
-                        las telecomunicaciones, siendo el socio preferido por nuestros clientes para satisfacer 
-                        sus necesidades más críticas. Nos esforzamos por ofrecer servicios integrales y soluciones 
-                        innovadoras en asesoría, soporte técnico, administración, operación, construcción y mantenimiento 
-                        de redes. Nuestro compromiso con la excelencia, la integridad y la calidad nos impulsa a superar
-                         constantemente los estándares del mercado y a brindar un servicio excepcional que contribuya al
-                          éxito y la competitividad de nuestros clientes. Nos vemos a nosotros mismos como más que simples 
-                          proveedores; somos colaboradores estratégicos y socios de confianza, comprometidos a impulsar el 
-                          crecimiento y el prestigio de las organizaciones con las que trabajamos.
+                        estratégicos y socios de confianza.
                     </p>
                 </div>
             </div>
         </div>
     </section>
+    
+
+    <section id="vision" class="vision" style="text-align: center;">
+        <div class="vision-container container">
+            <div class="row align-items-center justify-content-center">
+                <!-- Columna para los botones de switch -->
+                <div class="col-md-2 mb-3">
+                    <a id="misionBtnVision" class="btn btn-primary btn-switch btn-mision-2 mr-2">Misión</a>
+                    <a id="visionBtn" class="btn btn-primary btn-switch btn-vision-2 active">Visión</a>
+                </div>
+                <!-- Columna para la imagen -->
+                <div class="col-md-5 mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <img class="img-secciones" src="{% static 'images/assets/vision1.png' %}" alt="Imagen de la visión">
+                </div>
+                <!-- Columna para el texto -->
+                <div class="col-md-5 mb-3" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h2 class="mb-4">Visión</h2>
+                    <p class="text-left">En Simect Group, aspiramos a ser líderes reconocidos en la industria de 
+                        las telecomunicaciones, siendo el socio preferido por nuestros clientes para satisfacer 
+                        sus necesidades más críticas. Nos esforzamos por ofrecer servicios integrales y soluciones 
+                        innovadoras en asesoría, soporte técnico, administración, operación, construcción y mantenimiento 
+                        de redes. Nuestro compromiso con la excelencia, la integridad y la calidad nos impulsa a superar
+                        constantemente los estándares del mercado y a brindar un servicio excepcional que contribuya al
+                        éxito y la competitividad de nuestros clientes. Nos vemos a nosotros mismos como más que simples 
+                        proveedores; somos colaboradores estratégicos y socios de confianza, comprometidos a impulsar el 
+                        crecimiento y el prestigio de las organizaciones con las que trabajamos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
 
     <section class="politica-section" style="text-align: center;">
         <div class="politica-container container">
@@ -200,6 +218,41 @@
         </a>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('misionBtn').classList.add('active');
+            document.getElementById('vision').style.display = 'none';
+        });
+
+        // Función para mostrar la sección de misión y ocultar la de visión con transición
+        document.getElementById('misionBtnVision').addEventListener('click', function() {
+            const misionSection = document.getElementById('mision');
+            const visionSection = document.getElementById('vision');
+            misionSection.style.display = 'block';
+            visionSection.style.display = 'none';
+            misionSection.style.opacity = 0;
+            setTimeout(function() {
+                misionSection.style.opacity = 1;
+            }, 100); // Ajusta el tiempo de espera según sea necesario
+            document.getElementById('misionBtnVision').classList.add('active');
+            document.getElementById('visionBtn').classList.remove('active');
+        });
+
+        // Función para mostrar la sección de visión y ocultar la de misión con transición
+        document.getElementById('visionBtn').addEventListener('click', function() {
+            const misionSection = document.getElementById('mision');
+            const visionSection = document.getElementById('vision');
+            misionSection.style.display = 'none';
+            visionSection.style.display = 'block';
+            visionSection.style.opacity = 0;
+            setTimeout(function() {
+                visionSection.style.opacity = 1;
+            }, 100); // Ajusta el tiempo de espera según sea necesario
+            document.getElementById('misionBtn').classList.remove('active');
+            document.getElementById('visionBtn').classList.add('active');
+        });
+    </script>
+    
 
 
 </body>

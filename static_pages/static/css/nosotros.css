@@ -44,9 +44,15 @@
     max-height: 100%;
   }
 
+
+  
   .mision {
     background-color: #f5f5f5;
   
+  }
+
+  .vision {
+    background-color: #f5f5f5;
   }
 
   .mision-container {
@@ -83,5 +89,45 @@
 
   .imagen-cobertura-container img:hover {
     transform: scale(1.1); /* Ajusta el valor de escala según tu preferencia */
+}
+
+.btn-switch {
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: all .3s ease;
+  margin-bottom: 10px;
+  background-color: #75BBE2;
+  border: none;
+
+}
+
+.btn-mision-1:hover {
+  background-color: #2592D2;
+  color: #fff;
+}
+
+.btn-mision-2:hover {
+  background-color: #2592D2;
+  color: #fff;
+}
+
+.btn-vision-2 {
+  background-color: #75BBE2;
+  color: #fff;
+
+}
+
+.btn-switch:hover {
+  background-color: #2592D2;
+  color: #fff;
+}
+
+.btn-switch.active {
+   color: #fff;
+}
+
+.mision, .vision {
+  transition: cubic-bezier(0.1, 0.7, 1.0, 0.1) 0.5s all;
 }
 

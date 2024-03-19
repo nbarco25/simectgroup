@@ -32,7 +32,7 @@
               <p class="card-text">Asistencia disponible en cualquier momento. </p>
 
               <div class="container-btn-precio col-md-12 text-center">
-                <button id="btn-precio" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$46.000</butto>
+                <button id="btn-precio-fibra-40" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$46.000</butto>
               </div>
 
             </div>
@@ -54,7 +54,7 @@
                 <p class="card-text">Asistencia disponible en cualquier momento. </p>
 
                 <div class="container-btn-precio col-md-12 text-center">
-                  <button id="btn-precio" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$60.000</butto>
+                  <button id="btn-precio-fibra-60" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$60.000</butto>
                 </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
                 <p class="card-text">Asistencia disponible en cualquier momento. </p>
 
                 <div class="container-btn-precio col-md-12 text-center">
-                  <button id="btn-precio" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$74.000</butto>
+                  <button id="btn-precio-fibra-80" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$74.000</butto>
                 </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
                 <p class="card-text">Asistencia disponible en cualquier momento. </p>
 
                 <div class="container-btn-precio col-md-12 text-center">
-                  <button id="btn-precio" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$89.000</butto>
+                  <button id="btn-precio-fibra-100" class="cargar-mas-btn btn btn-primary mt-4"><span>COP</span>$89.000</butto>
                 </div>
             </div>
           </div>
@@ -229,3 +229,32 @@
       document.getElementById('radioBtn').classList.add('active');
     });
   </script>
+<script>
+  // Función para abrir el chat de WhatsApp con un mensaje personalizado
+  function abrirChat(mensaje) {
+      var telefono = "573163347098"; // Agrega aquí tu número de WhatsApp
+      var url = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
+      window.open(url, '_blank');
+  }
+
+  // Evento click para el botón de precio de 40 Megas de Fibra
+  document.getElementById('btn-precio-fibra-40').addEventListener('click', function() {
+      abrirChat("¡Hola! Estoy interesado en el plan de 40 Megas de Fibra. ¿Puedes proporcionarme más información?");
+  });
+
+  // Evento click para el botón de precio de 60 Megas de Fibra
+  document.getElementById('btn-precio-fibra-60').addEventListener('click', function() {
+      abrirChat("¡Hola! Estoy interesado en el plan de 60 Megas de Fibra. ¿Puedes proporcionarme más información?");
+  });
+
+  // Evento click para el botón de precio de 80 Megas de Fibra
+  document.getElementById('btn-precio-fibra-80').addEventListener('click', function() {
+      abrirChat("¡Hola! Estoy interesado en el plan de 80 Megas de Fibra. ¿Puedes proporcionarme más información?");
+  });
+
+  // Evento click para el botón de precio de 100 Megas de Fibra
+  document.getElementById('btn-precio-fibra-100').addEventListener('click', function() {
+      abrirChat("¡Hola! Estoy interesado en el plan de 100 Megas de Fibra. ¿Puedes proporcionarme más información?");
+  });
+</script>
+
