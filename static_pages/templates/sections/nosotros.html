@@ -1,0 +1,31 @@
+{% load cms_tags menu_tags sekizai_tags static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SimectGroup page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>{% block title %}Simect Group{% endblock title %}</title>
+    {% bootstrap_css %}
+    {% render_block "css" %}
+    {% include "blocks/us_css_block.html" %}
+
+</head>
+
+
+<body>
+    {% include "sections/navbar.html" %}
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1>SIMECT GROUP Telecomunicaciones S.A.S</h1>
+          <p>Empresa de telecomunicaciones con operación nacional desde 2014, especializados en integración de soluciones de infraestructura para telecomunicaciones en fibra óptica, eléctricas, electrónicas y paneles solares.</p>
+        </div>
+      </section>
+
+
+</body>
+

@@ -7,6 +7,9 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'base.html')
 
+def nosotros_view(request):
+    return render(request, 'sections/nosotros.html')
+
 
 def enviar_correo(request):
     if request.method == 'POST':
