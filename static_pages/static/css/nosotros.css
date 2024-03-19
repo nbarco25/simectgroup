@@ -37,3 +37,50 @@
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .img-secciones {
+    max-width: 80%; 
+    max-height: 100%;
+  }
+
+  .mision {
+    background-color: #f5f5f5;
+
+  }
+
+  .mision-container {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+
+  .vision-container{
+    padding: 50px 0;
+  }
+
+  .politica-section{
+    background-color: #f5f5f5;
+  }
+
+  .politica-container {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+
+  .lista-nosotros {
+    list-style-type: none;
+  }
+
+  .contenedor-otros {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .imagen-cobertura-container{
+    padding: 50px 0;
+    transition: transform 0.5s ease;
+  }
+
+  .imagen-cobertura-container img:hover {
+    transform: scale(1.1); /* Ajusta el valor de escala según tu preferencia */
+}
+

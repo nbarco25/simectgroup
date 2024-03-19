@@ -54,28 +54,3 @@ html, body {
 
 }
 
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    animation: floatButton 3s infinite alternate; /* Animación de flotación */
-  }
-  
-
-  .whatsapp-button img {
-    width: 60px; /* Ajusta el tamaño del ícono según sea necesario */
-    height: auto;
-  }
-  
-  @keyframes floatButton {
-    0% {
-      transform: translateY(0);
-      filter: brightness(1);
-    }
-    100% {
-      transform: translateY(-10px);
-      filter: brightness(1.2); /* Ajusta este valor para cambiar la intensidad del brillo */
-    }
-  }
-
