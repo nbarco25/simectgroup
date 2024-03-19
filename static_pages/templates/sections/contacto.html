@@ -40,7 +40,8 @@
             </div>
     
             <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
-                <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                <form action="{% url 'enviar_correo' %}" method="post" class="contact-form form-validate" novalidate="novalidate">
+                    {% csrf_token %}
                     <h1 class="titulo-contacto-form">
                         ¡Hablemos!
                     </h1>
@@ -96,3 +97,4 @@
         </div>
     </div>
 </div>
+
