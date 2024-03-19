@@ -42,3 +42,14 @@ html, body {
 .planes-section {
     background-color: rgba(192, 227, 243, 0.19);
 }
+
+.contacto-section {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('/static/images/assets/bg-contacto.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 30%;
+
+}

@@ -1,0 +1,61 @@
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #75BBE2 0%, #2592D2 100%);
+    background-image: -ms-linear-gradient(0deg, #2592D2 0%, #2592D2 100%);
+    color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 1rem !important
+
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+.titulo-contacto-form{
+    color: black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo-texto {
+    border-radius: 18.5px;
+}
+
+.btn-enviar-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enviar {
+    border-radius: 21px;
+    background: #75bbe2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
