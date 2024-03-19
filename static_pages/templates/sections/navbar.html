@@ -1,8 +1,8 @@
 {% load cms_tags menu_tags sekizai_tags static %}
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="navbar-logo navbar-brand">
-            <a href="/"><img src="{% static 'images/logos/Simect-Logo.png' %}" alt="Logo"></a>
+            <a href="/"><img class="logo-simect-img" src="{% static 'images/logos/Simect-Logo.png' %}" alt="Logo"></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-options">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Planes</a>
+                    <a class="nav-link" href="/#planes-section-id">Planes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Servicios</a>
@@ -24,12 +24,14 @@
                     <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hablemos</a>
+                    <a class="nav-link" href="/#contacto-section-id">Hablemos</a>
                 </li>
+               
             </ul>
-        <div class="navbar-social-icons">
-            <a href="#"><img src="{% static 'images/logos/IconoIG.svg' %}" alt="Logo2"></a>
-            <a href="#"><img src="{% static 'images/logos/IconoLinkedin.svg' %}" alt="Logo3"></a>
-        </div>
+            <div class="navbar-social-icons">
+                <a href="https://www.facebook.com/simect" target="_blank"><i class="nav-link iconos-redes fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/simect/" target="_blank"><i class="iconos-redes fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/simect" target="_blank"><i class="iconos-redes fab fa-linkedin-in"></i></a>
+            </div>
     </div>
     </nav>

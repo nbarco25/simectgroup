@@ -10,6 +10,10 @@ def index(request):
 def nosotros_view(request):
     return render(request, 'sections/nosotros.html')
 
+def hablemos_view(request):
+    return render(request, 'sections/contacto.html')
+
+
 
 def enviar_correo(request):
     if request.method == 'POST':

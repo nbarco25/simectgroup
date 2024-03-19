@@ -14,9 +14,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
     padding-top: 20px;
-    font-size: 50px;
+}
 
+.container-btn-precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+
+}
+
+.btn-precio {
+    border-radius: 18px;
 }
 
 #fibraBtn, #radioBtn {
@@ -43,4 +54,8 @@
 
 .bg-light {
     border-radius: 45px;
+}
+
+.card-container-body {
+    padding: 20px 20px 0 20px;
 }

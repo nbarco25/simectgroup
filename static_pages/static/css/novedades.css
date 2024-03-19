@@ -31,3 +31,21 @@
     padding-right: 20px;
 }
 
+.btn-leer-mas{
+    background-color: #75BBE2;
+    border: 0px;
+    border-radius: 21px;
+    color: white;
+}
+
+
+.cargar-mas-btn{
+    background-color: #75BBE2;
+    border: 0px;
+    border-radius: 21px;
+    color: white;
+}
+
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}

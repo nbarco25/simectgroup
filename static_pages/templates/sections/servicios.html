@@ -1,0 +1,58 @@
+{% load cms_tags menu_tags sekizai_tags static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SimectGroup page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>{% block title %}Simect Group{% endblock title %}</title>
+    {% bootstrap_css %}
+    {% render_block "css" %}
+    {% include "blocks/us_css_block.html" %}
+
+</head>
+
+
+<body>
+    {% include "sections/navbar.html" %}
+
+    <section class="otros-datos">
+        <div class=" contenedor-otros" style="background-color: #C0E3F3; ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text-left">
+                            <img src="{% static 'images/assets/Group33733.png' %}" class="img-otros img-fluid " alt="Imagen 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-left">
+                            <img src="{% static 'images/assets/Group33734.png' %}" class="img-otros img-fluid " alt="Imagen 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-left">
+                            <img src="{% static 'images/assets/Group33735.png' %}" class="img-otros img-fluid " alt="Imagen 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+      <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=3163347098">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>

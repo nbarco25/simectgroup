@@ -36,6 +36,7 @@
     line-height: 1.5;
     max-width: 600px;
     margin: 0 auto;
+    z-index: -1;
   }
 
   .img-secciones {
@@ -45,7 +46,7 @@
 
   .mision {
     background-color: #f5f5f5;
-
+  
   }
 
   .mision-container {

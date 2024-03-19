@@ -6,6 +6,8 @@
     padding-top: 20px;
     padding-left: 300px;
     position: relative;
+    border : solid 1px #f5f5f5;
+    box-shadow: #0056b3;
 }
 
 .nav-link{
@@ -36,23 +38,27 @@
 
 .navbar-options li a {
     text-decoration: none;
-    color: #6A6A6A
+    color: #6A6A6A;
+    font-weight: bold;
    
 }
 
 .navbar-options li a:hover {
-    color: #e6007e;
+    color: #0056b3;
+    font-weight: bold;
 }
 
 .navbar-social-icons {
+    display: flex;
     right: 20px;
     padding-left: 20%;
+    z-index: 1000;
 }
 
-.navbar-social-icons a img {
-    width: auto; /* Tamaño inicial de los íconos */
-    height: 25px;
+.iconos-redes{
+    padding: 0rem 0.5rem 0.5rem 1rem;
 }
+
 
 /* Media query para ajustar el tamaño de los íconos en dispositivos más pequeños */
 @media (max-width: 768px) {
@@ -85,4 +91,19 @@
     .navbar-options {
         display: block;
     }
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    padding-bottom: 20px;
+    height: 70px;
+
+}
+
+.logo-simect-img a img:hover {
+    transform: scale(1.1); /* Ajusta el valor de escala según tu preferencia */
 }
